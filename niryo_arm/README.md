@@ -16,5 +16,9 @@ https://ros-planning.github.io/moveit_tutorials/doc/setup_assistant/setup_assist
 ## 1. Moveit Control
 위의 demo_gazebo가 실행된 상태에서, 
 ```
-    python3 script_example.py를 실행한 뒤, reach을 입력하여, 원하는 지점까지 로봇이 움직이는 파이썬 스크립트를 작성해봅시다. (예제 파일 참고) 
+    python3 script_example.py를 실행한 뒤, reach을 입력하여, 원하는 지점 혹은 관절 목표까지 로봇이 움직이는 파이썬 스크립트를 작성해봅시다. (예제 파일 참고) 
+```
+참고: 다음의 명령어를 이용하면, 월드 좌표계에서 바라보는 target까지의 위치를 볼 수 있습니다. 
+```
+rosrun tf tf_echo /world /hand_link 
 ```
